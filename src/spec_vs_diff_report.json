@@ -1,0 +1,16 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T09:00:10.335Z",
+  "summary": "The diff adds a frontend-only “Copy link” action for both customer-facing UI (Header) and the Admin Dashboard, copying `window.location.href` to the clipboard with success/failure toast feedback. No backend/canister changes are shown.",
+  "missing_requirements": [],
+  "hallucinated_features": [],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/pages/admin/AdminDashboardPage.tsx",
+    "frontend/src/utils/copyToClipboard.ts",
+    "project_state.json"
+  ]
+}

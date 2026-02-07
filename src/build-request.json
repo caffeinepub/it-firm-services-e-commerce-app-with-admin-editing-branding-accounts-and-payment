@@ -1,0 +1,66 @@
+{
+  "kind": "build_request",
+  "title": "Provide a shareable published app link (copy-to-clipboard) for users",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "text": "Add a user-facing \"Copy link\" action that copies the current app URL to the clipboard so the user can share/open the published app via a single link.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "ok publish now and give me the download link"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new UI control labeled \"Copy link\" is available in the customer-facing UI (e.g., in the top header).",
+        "Clicking \"Copy link\" copies the current window location URL (including any hash/route) to the clipboard.",
+        "After copying, a toast/notification is shown with English text confirming success (e.g., \"Link copied\").",
+        "If clipboard access fails, show an English error toast (e.g., \"Could not copy link\") and do not crash."
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Expose the same \"Copy link\" action in the Admin Dashboard area so admins can easily copy/share the published app URL.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "ok publish now and give me the download link"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Admins can access a \"Copy link\" control from the admin area UI (e.g., within the Admin dashboard page header or a clearly visible section).",
+        "The copied URL matches the current URL as seen in the browser address bar.",
+        "Success and failure feedback are shown using English toasts/notifications."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/components/ui or other paths listed as immutable in SYSTEM_CONTEXT.",
+    "Do not add any backend/canister methods for this request; copying/sharing the link must be implemented purely on the frontend."
+  ],
+  "nonGoals": [
+    "Actually deploying/publishing the app to production as part of code changes.",
+    "Generating an external \"download link\" hosted outside the app (e.g., file hosting) or packaging native installers."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

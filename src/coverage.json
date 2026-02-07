@@ -1,0 +1,52 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T09:00:10.338Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-17",
+        "summary": "Add a user-facing \"Copy link\" action that copies the current app URL to the clipboard so the user can share/open the published app via a single link.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/utils/copyToClipboard.ts",
+          "frontend/src/components/Header.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/utils/copyToClipboard.ts",
+          "frontend/src/components/Header.tsx"
+        ]
+      },
+      {
+        "id": "REQ-18",
+        "summary": "Expose the same \"Copy link\" action in the Admin Dashboard area so admins can easily copy/share the published app URL.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/admin/AdminDashboardPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/admin/AdminDashboardPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/pages/admin/AdminDashboardPage.tsx",
+    "frontend/src/utils/copyToClipboard.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

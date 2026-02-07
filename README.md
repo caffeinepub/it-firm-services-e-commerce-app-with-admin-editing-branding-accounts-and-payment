@@ -1,2 +1,3 @@
-# it-firm-services-e-commerce-app-with-admin-editing-branding-accounts-and-payment
-Exported from Caffeine project: IT Firm Services + E-commerce App with Admin Editing, Branding, Accounts, and Payments
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

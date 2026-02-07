@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 9,
+  "summary": "Business app for an IT firm combining service listings and an e-commerce store (products like domains/hosting, computer parts, etc.), with customer accounts, payment gateway, and a fully editable admin panel to manage items and branding (logo/images).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-customer-facing-web-app-that-includes-a-a-services-catalog-and-b-an-e-commerce-store-with-clear-navigation-between-home-services-store-product-detail-cart-checkout-and-account-pages",
+      "title": "Create a customer-facing web app that includes (a) a Services catalog and (b) an E-commerce store, with clear navigation between: Home, Services, Store, Product Detail, Cart, Checkout, and Account pages.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-customer-account-access-using-internet-identity-authentication-and-show-an-account-area-where-signed-in-users-can-view-their-basic-profile-info-and-their-order-history",
+      "title": "Add customer account access using Internet Identity authentication and show an Account area where signed-in users can view their basic profile info and their order history.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-admin-dashboard-that-is-fully-editable-for-managing-the-business-content-services-and-products-create-edit-delete-including-fields-such-as-name-title-description-category-pricing-where-applicable-and-images",
+      "title": "Create an Admin Dashboard that is fully editable for managing the business content: Services and Products (create/edit/delete), including fields such as name/title, description, category, pricing (where applicable), and images.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-site-branding-management-so-the-admin-can-upload-change-the-app-logo-and-key-images-at-any-time-and-the-customer-facing-app-uses-the-currently-configured-branding-assets",
+      "title": "Add site branding management so the admin can upload/change the app logo and key images at any time, and the customer-facing app uses the currently configured branding assets.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-payment-gateway-checkout-flow-for-store-purchases-using-stripe-checkout-or-equivalent-supported-payment-gateway-including-order-creation-payment-status-tracking-and-a-success-cancel-return-experience-in-the-ui",
+      "title": "Add a payment gateway checkout flow for store purchases using Stripe Checkout (or equivalent supported payment gateway), including order creation, payment status tracking, and a success/cancel return experience in the UI.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-coherent-distinct-visual-theme-across-the-frontend-colors-typography-layout-components-appropriate-for-an-it-services-retail-business-avoiding-a-blue-purple-default-palette",
+      "title": "Apply a coherent, distinct visual theme across the frontend (colors, typography, layout, components) appropriate for an IT services + retail business, avoiding a blue/purple default palette.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-admin-branding-ui-to-allow-admins-to-configure-a-logo-url-b-a-list-of-slider-image-urls-add-remove-multiple-and-c-a-list-of-banner-image-urls-add-remove-multiple-with-image-previews",
+      "title": "Update the Admin Branding UI to allow admins to configure: (a) Logo URL, (b) a list of Slider image URLs (add/remove multiple), and (c) a list of Banner image URLs (add/remove multiple), with image previews.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-configured-branding-slider-and-banners-in-the-customer-facing-ui-show-a-homepage-image-slider-when-slider-images-are-configured-and-show-a-banner-image-in-the-store-and-product-detail-pages-when-banner-images-are-configured",
+      "title": "Render the configured branding slider and banners in the customer-facing UI: show a homepage image slider when slider images are configured, and show a banner image in the store and product detail pages when banner images are configured.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-admin-dashboard-ui-to-allow-admins-to-edit-and-save-whatsapp-link-facebook-link-youtube-link-and-language-selector-options-including-a-default-language-using-the-existing-branding-update-flow",
+      "title": "Update the Admin Dashboard UI to allow admins to edit and save: WhatsApp link, Facebook link, YouTube link, and language selector options (including a default language), using the existing branding update flow.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-configured-whatsapp-facebook-youtube-buttons-and-a-language-selector-in-the-top-site-header-social-buttons-must-open-the-configured-urls-and-only-appear-when-configured",
+      "title": "Render the configured WhatsApp, Facebook, YouTube buttons and a language selector in the top site header; social buttons must open the configured URLs and only appear when configured.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-client-side-language-selection-persistence-selecting-a-language-in-the-header-should-persist-across-page-reloads-for-that-browser-without-requiring-authentication-and-should-default-to-the-admin-configured-default-language-when-no-previous-selection-exists",
+      "title": "Implement client-side language selection persistence: selecting a language in the header should persist across page reloads for that browser (without requiring authentication), and should default to the admin-configured default language when no previous selection exists.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-user-facing-copy-link-action-that-copies-the-current-app-url-to-the-clipboard-so-the-user-can-share-open-the-published-app-via-a-single-link",
+      "title": "Add a user-facing \"Copy link\" action that copies the current app URL to the clipboard so the user can share/open the published app via a single link.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-expose-the-same-copy-link-action-in-the-admin-dashboard-area-so-admins-can-easily-copy-share-the-published-app-url",
+      "title": "Expose the same \"Copy link\" action in the Admin Dashboard area so admins can easily copy/share the published app URL.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Service catalog module covering IT firm services (WordPress website selling, domain & hosting sales, computer servicing, other services)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "E-commerce store for selling products (e.g., computer parts and other products)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Admin panel to add/edit/update products and service items (fully editable by admin)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Branding management: allow uploading/changing app logo and images",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Payment gateway integration for purchases",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement backend data models and persistence for: Service items, Products, Orders, and Site Branding (logo and key images). Provide query/update methods needed by the frontend to list, view, create, update, and delete services/products; create and view orders; and read/update branding assets.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Implement admin authorization controls in the backend, including an initial admin principal list and admin-only methods to manage who is an admin (add/remove).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add branding UI options for homepage slider and banner(s), manageable via admin (upload/change images and related settings)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Extend the backend SiteBranding model to support separate configurable image lists for (1) a homepage slider and (2) store/product banners, and expose them through the existing getSiteBranding/updateBranding methods.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add top-bar buttons for WhatsApp, Facebook, YouTube, and a Language selector; all options/links configurable (editable) via the admin panel",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Extend the backend SiteBranding model to store admin-editable top-header settings for (a) WhatsApp, Facebook, and YouTube links and (b) a language selector configuration (available languages and default language).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Add a conditional state migration for existing deployments so previously stored SiteBranding data (logo, homepageSliderImages, storeBanners) is preserved and the new social/language fields are initialized to defaults.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "IT Firm Services + E-commerce App with Admin Editing, Branding, Accounts, and Payments",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

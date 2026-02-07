@@ -1,0 +1,50 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-user-facing-copy-link-action-that-copies-the-current-app-url-to-the-clipboard-so-the-user-can-share-open-the-published-app-via-a-single-link",
+      "featureTitle": "Add a user-facing \"Copy link\" action that copies the current app URL to the clipboard so the user can share/open the published app via a single link.",
+      "files": [
+        "frontend/src/components/Header.tsx",
+        "frontend/src/utils/copyToClipboard.ts"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "http-outcalls@3.0.0",
+        "stripe@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-expose-the-same-copy-link-action-in-the-admin-dashboard-area-so-admins-can-easily-copy-share-the-published-app-url",
+      "featureTitle": "Expose the same \"Copy link\" action in the Admin Dashboard area so admins can easily copy/share the published app URL.",
+      "files": [
+        "frontend/src/pages/admin/AdminDashboardPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "http-outcalls@3.0.0",
+        "stripe@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

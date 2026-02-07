@@ -1,0 +1,45 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Copy-to-clipboard shareable published app link (customer UI + admin dashboard)",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "summary": "Add a customer-facing \"Copy link\" control in the main header that copies the current URL and shows success/failure toasts.",
+      "acceptanceCriteria": [
+        "A new UI control labeled \"Copy link\" is available in the customer-facing UI (e.g., in the top header).",
+        "Clicking \"Copy link\" copies the current window location URL (including any hash/route) to the clipboard.",
+        "After copying, a toast/notification is shown with English text confirming success (e.g., \"Link copied\").",
+        "If clipboard access fails, show an English error toast (e.g., \"Could not copy link\") and do not crash."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/utils/copyToClipboard.ts",
+          "operation": "create",
+          "description": "Add a small clipboard utility that attempts to copy provided text using the Clipboard API when available, with a safe fallback for older/unsupported browsers, returning a success/failure result without throwing."
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Add a clearly visible \"Copy link\" action to the header (and mobile menu if applicable) that uses the clipboard utility to copy window.location.href (including hash/route) and shows English success/error toasts via the existing sonner toast system."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Expose the same \"Copy link\" action in the Admin Dashboard UI so admins can copy/share the current URL with toast feedback.",
+      "acceptanceCriteria": [
+        "Admins can access a \"Copy link\" control from the admin area UI (e.g., within the Admin dashboard page header or a clearly visible section).",
+        "The copied URL matches the current URL as seen in the browser address bar.",
+        "Success and failure feedback are shown using English toasts/notifications."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/admin/AdminDashboardPage.tsx",
+          "operation": "modify",
+          "description": "Add a \"Copy link\" control in a prominent location (e.g., next to the Admin Dashboard title) that copies window.location.href using the shared clipboard utility and shows English success/error toasts via sonner."
+        }
+      ]
+    }
+  ]
+}
